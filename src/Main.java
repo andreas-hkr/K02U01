@@ -5,7 +5,9 @@ public class Main {
         // Målet är att skriva ut
         // Klockan är: tt:mm:ss
 
-        System.out.println("Datum och tid:");
-        System.out.println(Calendar.getInstance().getTime().toString());
+        String now = Calendar.getInstance().getTime().toString();
+        now = now.substring(11, 19);
+
+        System.out.println("Klockan är: " + now);
     }
 }
